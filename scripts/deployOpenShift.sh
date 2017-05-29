@@ -371,9 +371,9 @@ cat > /home/${SUDOUSER}/setup-azure-node.yml <<EOF
       - azure
     notify:
     - restart atomic-openshift-node
-  - name: delete the node so it can recreate itself
-    command: oc delete node {{inventory_hostname}}
-    delegate_to: ${BASTION}
+  #- name: delete the node so it can recreate itself
+  #  command: oc delete node {{inventory_hostname}}
+  #  delegate_to: ${BASTION}
   - name: sleep to let node come back to life
     pause:
        minutes: 1
