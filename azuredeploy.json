@@ -273,7 +273,6 @@
 		},
 		"aadClientSecret": {
 			"type": "securestring",
-			"defaultValue": "GamYpzZh3Ws998/VA4szJ+0vqVa5FCaPOKlvzi91rDI=",
 			"minLength": 1,
 			"metadata": {
 				"description": "Azure AD Client Secret"
