@@ -137,7 +137,7 @@
 		},
 		"nodeInstanceCount": {
 			"type": "int",
-			"defaultValue": 1,
+			"defaultValue": 2,
 			"minValue": 1,
 			"allowedValues": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
 			"metadata": {
@@ -171,7 +171,7 @@
 		"enableMetrics": {
 			"type": "string",
 			"minLength": 1,
-			"defaultValue": "false",
+			"defaultValue": "true",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -182,7 +182,7 @@
 		"enableLogging": {
 			"type": "string",
 			"minLength": 1,
-			"defaultValue": "false",
+			"defaultValue": "true",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -193,7 +193,7 @@
 		"enableCockpit": {
 			"type": "string",
 			"minLength": 1,
-			"defaultValue": "false",
+			"defaultValue": "true",
 			"allowedValues": [
 				"true", "false"
 			],
@@ -204,7 +204,7 @@
 		"rhsmUsernamePasswordOrActivationKey": {
 			"type": "string",
 			"minLength": 1,
-			"defaultValue": "usernamepassword",
+			"defaultValue": "activationkey",
 			"allowedValues": [
 				"usernamepassword", "activationkey"
 			],
@@ -241,6 +241,7 @@
 		},
 		"keyVaultResourceGroup": {
 			"type": "string",
+			"defaultValue": "KeyVault",
 			"minLength": 1,
 			"metadata": {
 				"description": "Resource Group that contains the Key Vault"
@@ -248,6 +249,7 @@
 		},
 		"keyVaultName": {
 			"type": "string",
+			"defaultValue": "KeyVaultOCP",
 			"minLength": 1,
 			"metadata": {
 				"description": "Name of the Key Vault"
@@ -255,6 +257,7 @@
 		},
 		"keyVaultSecret": {
 			"type": "securestring",
+			"defaultValue": "SecretOCP",
 			"minLength": 1,
 			"metadata": {
 				"description": "Key Vault Secret Name that contains the Private Key"
@@ -262,6 +265,7 @@
 		},
 		"aadClientId": {
 			"type": "string",
+			"defaultValue": "287a5afa-86e3-42fe-9896-097fa984c8c2",
 			"minLength": 1,
 			"metadata": {
 				"description": "Azure AD Client ID"
@@ -269,6 +273,7 @@
 		},
 		"aadClientSecret": {
 			"type": "securestring",
+			"defaultValue": "GamYpzZh3Ws998/VA4szJ+0vqVa5FCaPOKlvzi91rDI=",
 			"minLength": 1,
 			"metadata": {
 				"description": "Azure AD Client Secret"
